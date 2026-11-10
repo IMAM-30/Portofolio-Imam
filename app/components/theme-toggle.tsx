@@ -21,8 +21,8 @@ export function ThemeToggle() {
       className="theme-toggle"
       type="button"
       onClick={toggleTheme}
-      aria-label="Ubah tema tampilan"
-      title="Ubah tema"
+      aria-label="Toggle color theme"
+      title="Toggle theme"
     >
       <span className="theme-icon theme-icon-light" aria-hidden="true">☀</span>
       <span className="theme-icon theme-icon-dark" aria-hidden="true">☾</span>

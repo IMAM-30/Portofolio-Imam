@@ -15,11 +15,11 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Imam Hudzaifah · Software Developer",
+  title: "Imam Hudzaifah · AI-assisted Software Developer",
   description:
-    "Portofolio Imam Hudzaifah, Software Developer dengan fokus pada web development dan intelligent systems.",
+    "The portfolio of Imam Hudzaifah, an AI-assisted Software Developer and Computer Science student focused on full-stack web development and intelligent systems.",
   openGraph: {
-    title: "Imam Hudzaifah · Software Developer",
+    title: "Imam Hudzaifah · AI-assisted Software Developer",
     description: "Building useful digital products with technology and empathy.",
     type: "website",
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="id" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${manrope.variable}`}>{children}</body>
     </html>
   );

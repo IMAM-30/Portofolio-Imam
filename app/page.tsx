@@ -16,49 +16,49 @@ export default function Home() {
     <main>
       <SiteEnhancements />
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Kembali ke awal">
+        <a className="brand" href="#top" aria-label="Back to top">
           IH<span>.</span>
         </a>
-        <nav aria-label="Navigasi utama">
-          <a href="#about">Tentang</a>
-          <a href="#projects">Proyek</a>
-          <a href="#experience">Pengalaman</a>
-          <a href="#contact">Kontak</a>
+        <nav aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
         </nav>
         <ThemeToggle />
       </header>
 
       <section className="hero section-shell" id="top">
         <div className="hero-copy reveal">
-          <p className="eyebrow"><span className="status-dot" /> Terbuka untuk kesempatan baru</p>
-          <h1>Membangun produk digital yang <em>berguna</em> dan bermakna.</h1>
+          <p className="eyebrow"><span className="status-dot" /> Open to new opportunities</p>
+          <h1>Building digital products that are <em>useful</em> and meaningful.</h1>
           <p className="hero-lead">
-            Saya Imam Hudzaifah, Software Developer dari Parepare dengan fokus pada web
-            development dan intelligent systems. Saya menggabungkan pemikiran teknis,
-            kepekaan terhadap kebutuhan pengguna, dan kemauan belajar untuk membangun solusi
-            yang relevan.
+            I&apos;m Imam Hudzaifah, an AI-assisted Software Developer and seventh-semester
+            Computer Science student from Parepare. I build full-stack web applications and
+            intelligent systems, using AI coding tools to work efficiently while carefully
+            reviewing the results.
           </p>
           <div className="hero-actions">
-            <a className="button primary" href="#projects">Lihat proyek</a>
-            <a className="button secondary" href="/Imam-Hudzaifah-CV.docx" download>
-              Unduh CV
+            <a className="button primary" href="#projects">View projects</a>
+            <a className="button secondary" href="/Imam-Hudzaifah-CV.pdf" download>
+              Download CV
             </a>
           </div>
         </div>
-        <aside className="hero-card reveal delay-1" aria-label="Ringkasan profil">
+        <aside className="hero-card reveal delay-1" aria-label="Profile summary">
           <div>
             <p className="card-kicker">Current focus</p>
-            <h2>Web development, intelligent systems & digital products</h2>
+            <h2>Full-stack web development, AI-assisted workflows & intelligent systems</h2>
           </div>
           <dl className="quick-facts">
-            <div><dt>Lokasi</dt><dd>Parepare, Indonesia</dd></div>
-            <div><dt>Pendidikan</dt><dd>Computer Science</dd></div>
-            <div><dt>IPK</dt><dd>3.67 / 4.00</dd></div>
+            <div><dt>Location</dt><dd>Parepare, Indonesia</dd></div>
+            <div><dt>Education</dt><dd>Computer Science · 7th Semester</dd></div>
+            <div><dt>GPA</dt><dd>3.67 / 4.00</dd></div>
           </dl>
         </aside>
       </section>
 
-      <section className="highlights section-shell reveal" aria-label="Ringkasan pencapaian">
+      <section className="highlights section-shell reveal" aria-label="Career highlights">
         {highlights.map((item) => (
           <div className="highlight-item" key={item.label}>
             <strong>{item.value}</strong>
@@ -70,20 +70,19 @@ export default function Home() {
       <section className="about section-shell section" id="about">
         <div className="about-intro">
           <div className="section-heading reveal">
-            <p className="section-number">01 / Tentang</p>
-            <h2>Developer yang tumbuh melalui masalah nyata.</h2>
+            <p className="section-number">01 / About</p>
+            <h2>Practical software, built with curiosity and care.</h2>
           </div>
           <div className="about-copy reveal delay-1">
             <p>
-              Saya adalah mahasiswa Ilmu Komputer di Institut Teknologi Bacharuddin Jusuf
-              Habibie. Saya menikmati proses memahami kebutuhan, menyederhanakan masalah,
-              lalu menerjemahkannya menjadi produk digital yang dapat digunakan.
+              I&apos;m a seventh-semester Computer Science student at Bacharuddin Jusuf Habibie
+              Institute of Technology with a 3.67/4.00 GPA. My experience includes full-stack
+              web development, backend systems, frontend development, and intelligent systems.
             </p>
             <p>
-              Pengalaman saya mencakup pengembangan website profesional, digitalisasi layanan
-              publik, serta eksperimen machine learning dan computer vision. Bagi saya,
-              teknologi terbaik bukan hanya bekerja dengan baik—tetapi juga terasa jelas dan
-              relevan bagi penggunanya.
+              I use AI assistants for coding, debugging, refactoring, and technical
+              exploration, then evaluate and refine their output to meet project requirements.
+              I aim to build practical, reliable software that solves real problems.
             </p>
           </div>
         </div>
@@ -99,16 +98,16 @@ export default function Home() {
         <aside className="beyond-code reveal">
           <p className="card-kicker">Beyond code</p>
           <div>
-            <h3>Hiking membentuk cara saya menghadapi tantangan.</h3>
-            <p>Aktif menjelajahi pegunungan Sulawesi Selatan melatih navigasi, persiapan, adaptasi, dan ketenangan dalam mengambil keputusan di kondisi yang berubah.</p>
+            <h3>Hiking & mountaineering</h3>
+            <p>Since 2023, I&apos;ve explored mountain peaks and highland areas across South Sulawesi. These trips have strengthened my navigation, trip and equipment planning, and ability to adapt to different terrain and conditions.</p>
           </div>
         </aside>
       </section>
 
       <section className="section-shell section" id="projects">
         <div className="section-heading reveal">
-          <p className="section-number">02 / Proyek terpilih</p>
-          <h2>Pekerjaan yang sudah saya bangun.</h2>
+          <p className="section-number">02 / Selected projects</p>
+          <h2>Work I&apos;ve built.</h2>
         </div>
         <div className="project-grid">
           {projects.map((project, index) => (
@@ -128,7 +127,7 @@ export default function Home() {
                       href={project.links[previewIndex].url}
                       target="_blank"
                       rel="noreferrer"
-                      aria-label={`Buka ${preview.label}`}
+                      aria-label={`Open ${preview.label}`}
                       key={preview.src}
                     >
                       <Image src={preview.src} alt={preview.alt} fill sizes="(max-width: 820px) 82vw, 480px" />
@@ -138,7 +137,7 @@ export default function Home() {
                 </div>
               )}
               {project.visualSteps.length > 0 && (
-                <div className="system-flow" aria-label="Alur kerja sistem Computer Vision">
+                <div className="system-flow" aria-label="Computer vision system workflow">
                   {project.visualSteps.map((step, stepIndex) => (
                     <div className="system-step" key={step}>
                       <span>{String(stepIndex + 1).padStart(2, "0")}</span>
@@ -150,7 +149,7 @@ export default function Home() {
               <div className="project-content">
                 <h3>{project.title}</h3>
                 <p className="project-description">{project.description}</p>
-                <ul className="tag-list" aria-label="Teknologi dan fokus">
+                <ul className="tag-list" aria-label="Technologies and focus">
                   {project.stack.map((item) => <li key={item}>{item}</li>)}
                 </ul>
                 {project.links.length > 0 && (
@@ -171,27 +170,27 @@ export default function Home() {
       <section className="section-shell section experience" id="experience">
         <div className="experience-layout">
           <div className="section-heading reveal">
-            <p className="section-number">03 / Pengalaman</p>
-            <h2>Pengalaman profesional dan pendidikan.</h2>
+            <p className="section-number">03 / Experience</p>
+            <h2>Professional experience and education.</h2>
           </div>
           <div className="timeline reveal delay-1">
             <article>
-              <div className="timeline-meta"><span>Mar 2026 — Sekarang</span><span>Parepare</span></div>
-              <h3>Website & System Developer</h3>
+              <div className="timeline-meta"><span>March 2026 — Present</span><span>Parepare</span></div>
+              <h3>Website & Systems Developer</h3>
               <p className="organization">Owen Group</p>
-              <p>Mengembangkan dan memelihara website bersama tim, mengerjakan fitur frontend dan backend, integrasi database, serta penyelesaian masalah teknis proyek.</p>
+              <p>Collaborating with the development team on website development and maintenance, frontend and backend features, database integration, debugging, and technical troubleshooting. My work includes the Botox &amp; Filler Lab website and a sales and inventory management website for Peptide OS, a U.S.-based supplement business.</p>
             </article>
             <article>
-              <div className="timeline-meta"><span>2023 — Sekarang</span><span>Semester 7</span></div>
-              <h3>Sarjana Ilmu Komputer</h3>
-              <p className="organization">Institut Teknologi Bacharuddin Jusuf Habibie</p>
-              <p>Mempelajari pengembangan perangkat lunak, pengolahan data, machine learning, dan computer vision. IPK 3.67/4.00.</p>
+              <div className="timeline-meta"><span>2023 — Present</span><span>7th Semester</span></div>
+              <h3>B.Sc. in Computer Science (In Progress)</h3>
+              <p className="organization">Bacharuddin Jusuf Habibie Institute of Technology</p>
+              <p>Studying software development, data processing, machine learning, and computer vision. GPA: 3.67/4.00.</p>
             </article>
             <article>
-              <div className="timeline-meta"><span>2021 — Sekarang</span><span>Parepare</span></div>
-              <h3>Marbot & Muadzin</h3>
-              <p className="organization">Masjid Al-Istiqamah</p>
-              <p>Mendukung operasional kegiatan masjid sekaligus menangani kebutuhan IT, perangkat elektronik, dan kelistrikan fasilitas.</p>
+              <div className="timeline-meta"><span>2021 — Present</span><span>Parepare</span></div>
+              <h3>Mosque Caretaker & Adhan Caller</h3>
+              <p className="organization">Al-Istiqamah Mosque · Parepare City</p>
+              <p>Supporting daily mosque operations and handling IT issues, electronic equipment, and electrical systems based on facility needs.</p>
             </article>
           </div>
         </div>
@@ -199,8 +198,8 @@ export default function Home() {
 
       <section className="section-shell section skills-section">
         <div className="section-heading reveal">
-          <p className="section-number">04 / Kemampuan</p>
-          <h2>Teknologi yang saya gunakan.</h2>
+          <p className="section-number">04 / Skills</p>
+          <h2>Technologies I use.</h2>
         </div>
         <div className="skills-grid">
           {skillGroups.map((group, index) => (
@@ -211,13 +210,14 @@ export default function Home() {
             </article>
           ))}
         </div>
+        <p className="skills-note"><strong>Languages:</strong> Indonesian (Native) · English (Basic Proficiency)</p>
       </section>
 
       <section className="contact section-shell section" id="contact">
         <div className="contact-card reveal">
-          <p className="section-number">05 / Kontak</p>
-          <h2>Mari membangun sesuatu yang berguna.</h2>
-          <p>Saya terbuka untuk berdiskusi tentang teknologi, kolaborasi, dan kesempatan belajar baru.</p>
+          <p className="section-number">05 / Contact</p>
+          <h2>Let&apos;s build something useful.</h2>
+          <p>I&apos;m open to discussing technology, collaboration, and new learning opportunities.</p>
           <div className="contact-grid">
             {contactLinks.map((contact) => (
               <a

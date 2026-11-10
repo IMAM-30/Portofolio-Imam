@@ -288,6 +288,8 @@ h1 em { color: var(--accent); font-style: normal; }
 .skill-group > p { min-height: 68px; color: var(--muted); font-size: 13px; line-height: 1.55; }
 .skill-group ul { margin: 0; padding: 0; list-style: none; }
 .skill-group li { padding: 10px 0; color: var(--muted); border-top: 1px solid var(--line); font-size: 14px; }
+.skills-note { margin: 24px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.skills-note strong { color: var(--text); }
 
 .contact-card { padding: clamp(34px, 7vw, 76px); color: #eef6ff; background: #101c25; border-radius: 24px; position: relative; overflow: hidden; }
 .contact-card::after { content: ""; position: absolute; right: -80px; bottom: -120px; width: 280px; height: 280px; border: 1px solid rgba(108,165,255,.25); transform: rotate(28deg); }

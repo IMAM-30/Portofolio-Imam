@@ -23,13 +23,13 @@ export const projects: Project[] = [
     title: "Botox & Filler Lab",
     category: "Professional Project",
     description:
-      "Website perusahaan untuk klinik kecantikan asal Amerika Serikat, dikembangkan bersama tim Owen Group dengan fokus pada pengalaman pengguna yang jelas dan terawat.",
+      "A website for a U.S.-based aesthetics clinic, developed with the Owen Group team to deliver a clear, polished online experience.",
     stack: ["Web Development", "Frontend", "Maintenance"],
-    links: [{ label: "Kunjungi website", url: "https://botoxandfillerlab.com/" }],
+    links: [{ label: "Visit website", url: "https://botoxandfillerlab.com/" }],
     previews: [
       {
         src: "/projects/botox-filler-lab.png",
-        alt: "Landing page website Botox and Filler Lab",
+        alt: "Botox and Filler Lab website landing page",
         label: "Botox & Filler Lab",
       },
     ],
@@ -40,18 +40,18 @@ export const projects: Project[] = [
     title: "Reddith",
     category: "Academic Project",
     description:
-      "Platform forum komunikasi dan komunitas kampus yang dirancang untuk membantu mahasiswa terhubung, berdiskusi, dan berbagi informasi.",
+      "A campus community and discussion forum designed to help students connect, exchange ideas, and share information.",
     stack: ["Full-stack", "Community Platform", "Responsive UI"],
     links: [
       {
-        label: "Kunjungi website",
+        label: "Visit website",
         url: "https://plum-giraffe-248987.hostingersite.com/",
       },
     ],
     previews: [
       {
         src: "/projects/reddith.png",
-        alt: "Landing page platform forum kampus Reddith",
+        alt: "Reddith campus community and discussion forum landing page",
         label: "Reddith",
       },
     ],
@@ -59,10 +59,10 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "Digitalisasi Layanan Kelurahan",
-    category: "KKN · 5 Digital Products",
+    title: "Village Service Digitalization",
+    category: "Community Service Program (KKN) · 5 Websites",
     description:
-      "Rangkaian lima website yang dibangun untuk mendukung akses layanan, informasi, partisipasi masyarakat, dan kebutuhan digital kelurahan di Kota Parepare.",
+      "Five websites developed to support public services, information, citizen complaints, and mapping at the village administrative level in Parepare City, Indonesia.",
     stack: ["Next.js", "React", "Digital Public Service"],
     links: [
       { label: "KILAT", url: "https://kilat-watsor.vercel.app/" },
@@ -72,64 +72,64 @@ export const projects: Project[] = [
       { label: "PANTAS KEREN", url: "https://pantaskeren-watsor.vercel.app/" },
     ],
     previews: [
-      { src: "/projects/kilat.png", alt: "Landing page KILAT layanan persuratan digital", label: "KILAT" },
-      { src: "/projects/simpel.png", alt: "Landing page SIMPEL layanan pengaduan warga", label: "SIMPEL" },
-      { src: "/projects/suarakami.png", alt: "Landing page SUARA KAMI survei pelayanan publik", label: "SUARA KAMI" },
-      { src: "/projects/pastibisa.png", alt: "Landing page PASTI BISA pemetaan sasaran stunting", label: "PASTI BISA" },
-      { src: "/projects/pantaskeren.png", alt: "Landing page PANTAS KEREN pemetaan ekonomi kreatif", label: "PANTAS KEREN" },
+      { src: "/projects/kilat.png", alt: "KILAT digital correspondence service landing page", label: "KILAT" },
+      { src: "/projects/simpel.png", alt: "SIMPEL community reporting service landing page", label: "SIMPEL" },
+      { src: "/projects/suarakami.png", alt: "SUARA KAMI public service survey landing page", label: "SUARA KAMI" },
+      { src: "/projects/pastibisa.png", alt: "PASTI BISA stunting risk mapping landing page", label: "PASTI BISA" },
+      { src: "/projects/pantaskeren.png", alt: "PANTAS KEREN creative economy mapping landing page", label: "PANTAS KEREN" },
     ],
     visualSteps: [],
     featured: true,
   },
   {
-    title: "Computer Vision untuk Pematang Sawah",
-    category: "Intelligent System",
+    title: "Intelligent System: Computer Vision & Machine Learning",
+    category: "Academic Project · 2026",
     description:
-      "Sistem computer vision untuk mendeteksi dan menganalisis profil geometri pematang sawah, dengan Decision Tree sebagai pendukung keputusan navigasi.",
+      "A computer vision system that detects and analyzes the geometric profiles of rice-field embankments, with a Decision Tree-based machine learning model to support navigation decisions.",
     stack: ["Python", "OpenCV", "YOLO", "Machine Learning"],
     links: [],
     previews: [],
-    visualSteps: ["Data visual", "Deteksi YOLO", "Analisis OpenCV", "Decision Tree", "Keputusan navigasi"],
+    visualSteps: ["Visual data", "YOLO detection", "OpenCV analysis", "Decision Tree", "Navigation decision"],
   },
 ];
 
 export const skillGroups = [
   {
-    title: "Web Development",
-    description: "Membangun antarmuka, logika aplikasi, dan integrasi layanan untuk kebutuhan nyata.",
-    items: ["Laravel", "PHP", "JavaScript", "HTML & CSS", "REST API"],
+    title: "Web Development & Systems",
+    description: "Building and maintaining full-stack websites, digital services, database-backed systems, and API integrations.",
+    items: ["Laravel", "PHP", "JavaScript", "React", "Next.js", "HTML & CSS", "MySQL", "REST APIs", "Git & GitHub"],
   },
   {
-    title: "Data & Intelligent Systems",
-    description: "Mengolah data visual dan menerapkan model untuk membantu sistem mengambil keputusan.",
-    items: ["Python", "Machine Learning", "OpenCV", "YOLO", "Data Analysis"],
+    title: "AI-Assisted Development",
+    description: "Using coding assistants to accelerate implementation, debugging, refactoring, and technical exploration, then reviewing and refining their output.",
+    items: ["ChatGPT", "OpenAI Codex", "Claude", "Claude Code"],
   },
   {
-    title: "Tools & Database",
-    description: "Menjaga alur pengembangan, data, dan kolaborasi proyek tetap terstruktur.",
-    items: ["MySQL", "Git", "GitHub", "API Integration", "System Maintenance"],
+    title: "Artificial Intelligence & Data",
+    description: "Processing data and building intelligent applications with machine learning, computer vision, and API-based model integration.",
+    items: ["Python", "Data Processing", "Machine Learning", "OpenCV", "YOLO", "Machine Learning APIs"],
   },
 ];
 
 export const highlights = [
-  { value: "7", label: "Website publik" },
-  { value: "3.67", label: "IPK / 4.00" },
-  { value: "3+", label: "Area teknologi" },
-  { value: "2026", label: "Mulai profesional" },
+  { value: "8", label: "Websites developed" },
+  { value: "3.67", label: "GPA / 4.00" },
+  { value: "3+", label: "Technology areas" },
+  { value: "2026", label: "Professional experience since" },
 ];
 
 export const workPrinciples = [
   {
-    title: "Problem solving",
-    description: "Memecah persoalan kompleks menjadi solusi yang lebih sederhana, terukur, dan dapat dikerjakan.",
+    title: "Integrity & responsibility",
+    description: "Taking ownership of tasks, working with integrity, and following through on responsibilities.",
   },
   {
-    title: "Human-centered",
-    description: "Memahami konteks pengguna agar produk bukan hanya berfungsi, tetapi juga mudah dipahami dan digunakan.",
+    title: "Leadership & teamwork",
+    description: "Contributing to collaborative development work and supporting teammates toward shared goals.",
   },
   {
-    title: "Continuous learning",
-    description: "Terbuka mempelajari teknologi baru dan mengevaluasi hasil untuk terus meningkatkan kualitas pekerjaan.",
+    title: "Adaptability & attention to detail",
+    description: "Managing time and priorities carefully, paying attention to details, and adapting as needs change.",
   },
 ];
 
